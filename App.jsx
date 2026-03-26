@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowUpDown, Activity, Calendar, Camera, CarFront, Coffee, Compass, Download, FileText, Flag, Folder, FolderPlus, Maximize2, Minimize2, Mountain, NotebookPen, PenLine, Plus, Search, Settings2, Target, Trash2, Upload, Wrench } from 'lucide-react'
 import html2canvas from 'html2canvas'
-import LifeMap from './components/LifeMap'
-import { importRunFile } from './lib/runImport'
-import { deleteImportedSource, loadImportedSources, saveImportedSource } from './lib/importStore'
-import { deletePlaceMedia, deletePlaceMediaForPlace, loadAllPlaceMedia, savePlaceMedia } from './lib/placeMediaStore'
+import LifeMap from './components/LifeMap.jsx'
+import { importRunFile } from './lib/runImport.js'
+import { deleteImportedSource, loadImportedSources, saveImportedSource } from './lib/importStore.js'
+import { deletePlaceMedia, deletePlaceMediaForPlace, loadAllPlaceMedia, savePlaceMedia } from './lib/placeMediaStore.js'
 import './App.css'
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
@@ -4275,4 +4275,3 @@ function App() {
 }
 
 export default App
-
